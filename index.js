@@ -99,7 +99,7 @@ export default class InputScrollView extends Component {
                 <ScrollView
                     style = {{flex:1}}
                     contentContainerStyle = {[{alignItems : 'stretch',}]}
-                    keyboardShouldPersistTaps = {tapToDismiss?true:keyboardShouldPersistTaps}
+                    keyboardShouldPersistTaps = {tapToDismiss?'always':keyboardShouldPersistTaps}
                     ref={(srcollView) => {
                         this.scrollViewRef = srcollView;
                     }}
